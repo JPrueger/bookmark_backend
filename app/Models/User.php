@@ -51,7 +51,7 @@ class User extends Authenticatable
     //     $this->notify(new VerifyEmail());
     // }
 
-    // public function recommendations() {
-    //     return $this->hasMany(Recommendation::class);
-    // }
+    public function recommendations() {
+        return $this->hasMany(Recommendation::class);
+    }
 }

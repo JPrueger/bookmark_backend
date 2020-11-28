@@ -9,15 +9,15 @@ class Book extends Model
 {
     use HasFactory;
 
-    // public function author() {
-    //     return $this->belongsTo(Author::class);
-    // }
+    public function author() {
+        return $this->belongsTo(Author::class);
+    }
 
-    // public function recommendation() {
-    //     return $this->belongsTo(Recommendation::class);
-    // }
+    public function recommendation() {
+        return $this->belongsTo(Recommendation::class);
+    }
 
-    // public function category() {
-    //     return  $this->belongsTo(Category::class);
-    // }
+    public function category() {
+        return  $this->belongsTo(Category::class);
+    }
 }
